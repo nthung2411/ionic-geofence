@@ -1,0 +1,19 @@
+{
+    "beautify.language": {
+        "js": {
+            "type": ["javascript", "json"],
+            "filename": [".jsbeautifyrc"]
+        },
+        "css": ["css", "scss"],
+        "html": ["htm", "html"]
+    },
+    "max_preserve_newlines": 3,
+    "indent_size": 4,
+    "indent_char": " ",
+    "css": {
+        "newline_between_rules": true
+    },
+    "html": {
+        "wrap_attributes": "force"
+    }
+}
