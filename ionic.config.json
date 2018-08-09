@@ -1,0 +1,7 @@
+{
+  "name": "geofence-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
