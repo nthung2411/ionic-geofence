@@ -1,8 +1,9 @@
 import { Geofence } from './../../models/geofence';
-import { GeofenceProvider } from 'providers/geofencer/geofence.service';
+
 import { Component } from '@angular/core';
 import { NavController, NavParams, MenuController } from 'ionic-angular';
-import * as Leaflet from "leaflet";
+import { GeofenceProvider } from '../../providers/geofence.service';
+import * as Leaflet from 'leaflet';
 
 /**
  * Generated class for the GeofenceDetailPage page.

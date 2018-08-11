@@ -1,6 +1,6 @@
-import { UuidProvider } from '../uuid.service';
+import { Geofence } from './../models/geofence';
+import { UuidProvider } from './uuid.service';
 import { HttpClient } from '@angular/common/http';
-import { Geofence } from 'models/geofence';
 import { environment } from '@env/environment';
 import { Injectable } from "@angular/core";
 

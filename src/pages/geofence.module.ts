@@ -1,9 +1,12 @@
+import { UuidProvider } from './../providers/uuid.service';
+import { GeofenceProvider } from './../providers/geofence.service';
+import { ComponentsModule } from './../components/components.module';
 import { GeofenceListPage } from './geofence-list/geofence-list';
 import { GeofenceDetailPage } from './geofence-detail/geofence-detail';
 import { IonicModule } from 'ionic-angular';
-import { UuidProvider } from './../providers/uuid.service';
 import { NgModule } from '@angular/core';
-import { GeofenceProvider } from '../providers/geofencer/geofence.service';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 const pages = [
     GeofenceListPage,
@@ -12,7 +15,12 @@ const pages = [
 
 @NgModule({
     declarations: pages,
-    imports: [IonicModule],
+    imports: [
+        CommonModule,
+        HttpClientModule,
+        ComponentsModule,
+        IonicModule
+    ],
     entryComponents: pages,
     providers: [
         GeofenceProvider,

@@ -1,7 +1,7 @@
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { GeofenceListPage } from '../geofence-list/geofence-list';
 import { Component } from '@angular/core';
-import { NavController, Platform } from 'ionic-angular/umd';
+import { NavController, Platform } from 'ionic-angular';
 import { environment } from '@env/environment';
 
 @Component({

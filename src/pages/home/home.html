@@ -20,6 +20,11 @@
             <h2>Is Cordova</h2>
             <p>{{environment.isCordova}}</p>
         </ion-item>
-        <button (click)="goGeoList"></button>
+        <div text-center>
+            <button ion-button
+                (click)="goGeoList()">
+                Geo List
+            </button>
+        </div>
     </ion-list>
 </ion-content>

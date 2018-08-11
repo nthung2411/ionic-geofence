@@ -1,5 +1,5 @@
-import { GeofenceProvider } from 'providers/geofencer/geofence.service';
 import { Geofence } from './../../models/geofence';
+import { GeofenceProvider } from '../../providers/geofence.service';
 import { Component, Input, Output, EventEmitter } from "@angular/core";
 
 /**
@@ -17,9 +17,7 @@ export class GeofenceListItemComponent {
   @Input() geofence: Geofence;
   @Output() onItemTapped: EventEmitter<any> = new EventEmitter();
 
-  constructor(private geofenceService: GeofenceProvider) {
-
-  }
+  constructor(private geofenceService: GeofenceProvider) { }
 
   get header() {
     return this.geofence.notification.text;
